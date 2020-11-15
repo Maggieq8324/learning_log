@@ -1,0 +1,40 @@
+# Django项目搭建
+1、创建目录（learning_log）
+
+2、cmd learning_log
+
+3、建立虚拟环境
+	python -m venv ll_env
+
+4、激活虚拟环境
+	source ll_env/bin/activate（linux）
+	ll_env\Scripts\activate（windows）
+
+5、停止虚拟环境
+	deactivate
+
+6、安装Django
+	pip install Django==3.1.3
+
+7、Django升级命令
+	pip install -U Django
+
+8、创建项目
+	django-admin.py startproject learning_log .（linux）
+	django-admin startproject learning_log .（windows）
+
+9、创建SQLite数据库
+	python manage.py migrate
+
+10、启动项目
+	python manage.py runserver
+
+11、修改数据库（python manage.py shell命令模式下：）
+	python manage.py makemigrations learning_logs
+
+12、迁移项目
+	python manage.py migrate
+
+
+管理员账号：admin/P@ssw0rd
+	   coisini/maggieq8324.
